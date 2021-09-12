@@ -5,7 +5,7 @@ const allNavItems = document.querySelectorAll(".nav__item");
 const handleNav = () => {
   nav.classList.toggle("nav--active");
 
-  allNavItems.forEach((item) => {
+  allNavItems.forEach(item => {
     item.addEventListener("click", () => {
       nav.classList.remove("nav--active");
     });

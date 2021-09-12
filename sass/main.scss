@@ -124,8 +124,6 @@ body {
 
 .nav-items-animation {
   animation: navItemsAnimation 1s both;
-  
-
 }
 
 // HEADER
@@ -171,7 +169,59 @@ body {
   }
 }
 
+// MAIN
+// DREAM SECTION
+.dreams {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    margin-bottom: 0.5em;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+}
+
 // MEDIA QUERIES
+
+@media (min-width: 576px) {
+  .dreams {
+    font-size: 1.2rem;
+    &__box {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-text {
+        width: 55%;
+
+        &--right {
+          text-align: right;
+        }
+      }
+      &-img {
+        width: 40%;
+        &--right {
+          order: 1;
+        }
+      }
+    }
+
+    &__img {
+      margin-bottom: 0;
+      max-height: 300px;
+    }
+  }
+}
 
 @media (min-width: 768px) {
   .white-block {
@@ -189,6 +239,10 @@ body {
       font-size: 1.6rem;
     }
   }
+
+  .dreams {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -202,5 +256,35 @@ body {
     &__heading {
       font-size: 10rem;
     }
+  }
+
+  .nav {
+    &__item {
+      font-size: 4.6rem;
+    }
+  }
+
+  .dreams {
+    &__box {
+      margin: 5em 0;
+
+      &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 2.5em;
+
+      }
+    }
+
+    &__title {
+      font-style: 3.6rem;
+    }
+
+    &__text {
+      font-style: 2.2rem;
+    }
+
+
   }
 }
