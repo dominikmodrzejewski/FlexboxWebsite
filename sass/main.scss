@@ -20,6 +20,8 @@ body {
   font-size: 1.6rem;
 }
 
+
+
 // NAV
 .burger-btn {
   position: fixed;
@@ -135,6 +137,13 @@ body {
 .black-bars-color::after,
 .black-bars-color::before {
   background-color: $dark;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: $dark;
+
 }
 
 // HEADER
